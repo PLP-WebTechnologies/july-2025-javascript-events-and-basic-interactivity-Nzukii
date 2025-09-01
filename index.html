@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Feedback Collector</h1>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle">Toggle Theme</button>
+
+    <!-- Feedback Form -->
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" maxlength="300"></textarea>
+      <div id="charCount">0 / 300 characters</div>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <!-- Feedback Output -->
+    <div id="feedbackOutput"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
